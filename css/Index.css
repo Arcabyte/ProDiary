@@ -1,0 +1,210 @@
+
+.ALLCONTAINER {
+    height: calc( 100vh - 50px); 
+    display: flex;
+}
+
+/* ============= LEFT CONTAINER ============= */
+.container-l {
+    max-width: 50%; 
+    width: 50%; 
+    background-image: url('./images/BACKGROUND.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#LLOGO {
+ margin-left: 40px;
+ margin-right: 40px;
+}
+
+/* ============= RIGHT CONTAINER ============= */
+
+.container-r {
+    width: 50%;
+    max-width: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.R-LOGO-TEXT {
+    padding: 20px;
+}
+
+#R-LOGO {
+    display: none;
+    width: 50px;
+}
+
+#TYT {
+    color: white;
+    font-size: 64px;
+    font-weight: 900;
+    margin-top: 50px;
+}
+
+#JOINTODAY {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.clickables{
+    
+    width: 355px;
+}
+
+#SIGNUPWGOOGLE {
+    width: 350px;
+    height: 45px;
+    font-weight: 600;
+    border-radius: 60px;
+}
+
+#googleicon {
+    width: 18px;
+    margin-bottom: 2px;
+}
+
+.orcontainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#line{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: grey;
+  height: 1px;
+  width: 165px;
+}
+
+#OR {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    font-weight: 700 !important;
+}
+
+#CREATEANACC {
+    width: 350px;
+    height: 45px;
+    font-weight: 600;
+    border-radius: 60px;
+}
+
+
+#TOS {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#ALREADYHAVEANACC {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#SIGNIN {
+    width: 350px;
+    height: 45px;
+    font-weight: 600;
+    border-radius: 60px;
+}
+
+.footermobile {
+    display: none;
+}
+
+.FOOTERTEXT {
+     margin-left:20px;
+     margin-right:20px; 
+     color: grey
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.footer a {
+     margin-left:20px; 
+     margin-right:20px;
+     color: grey
+}
+/* ============= ACTIVATES ON MOBILE =============*/
+.footermobile a {
+     margin-left:20px;
+     margin-right:20px; 
+     color: grey
+}
+
+#lastMobile {
+    color: grey;
+}
+/* ============= MOBILE =============*/
+@media screen and (max-width: 768px) {
+    .container-r {
+       margin-left: 15PX;
+       margin-top: 15px;
+    }
+
+    #R-LOGO {
+        display: block;
+    }
+
+    .footermobile {
+        display: block;
+        margin-top: 50px;
+        width: 300px;
+        
+    }
+
+    #TYT {
+        margin-top: 15px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+    
+    #JOINTODAY {
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 35px;
+    }
+    
+    .container-l {
+        display: none;
+    }
+
+    .ALLCONTAINER {
+    background-color: black;
+    height: calc( 100vh); 
+    display: flex;
+   }
+
+    .container-r {
+        
+        width: 100%;
+        max-width: 100%;
+        display: initial;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+
+    .footer {
+        display: none;
+    }
+}
